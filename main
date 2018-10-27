@@ -1,0 +1,27 @@
+from typing import Sequence as Seq
+from typing import TypeVar, Tuple, List, Any
+from functools import lru_cache
+from itertools import chain
+import re
+
+from rs_money_methods import RSMoneyMethod, RSMethod
+from rs_skill_method import RSFarmingMethod, RSSkillMethod, RSFarmingLazyMethod
+from rs_item import RSItem
+import loader
+from farm_main import compare_all_tree_farming
+from blast_furnace_main import compare_all_smelting
+from bank_standing_main import compare_bank_standing
+
+
+def main():
+    db = loader.DataOSRSGE()
+    item = db.find_best_item('magic longbow (u)')
+    print(item)
+    exit()
+    #compare_all_tree_farming()
+    #compare_all_smelting()
+    compare_bank_standing()
+
+
+if __name__ == '__main__':
+    main()
