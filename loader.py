@@ -3,7 +3,6 @@ import difflib
 import json
 import time
 import functools
-import inspect
 
 
 class DataOSRSGE:
