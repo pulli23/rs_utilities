@@ -9,10 +9,6 @@ from bank_standing_main import compare_bank_standing
 
 
 def main():
-    db = loader.DataOSRSGE()
-    item = db.find_best_item('magic longbow (u)')
-    print(item)
-    exit()
     #compare_all_tree_farming()
     #compare_all_smelting()
     compare_bank_standing()
