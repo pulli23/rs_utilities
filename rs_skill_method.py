@@ -1,4 +1,4 @@
-from typing import Iterable, Tuple, List, MutableSequence
+from typing import Iterable, Tuple, List, MutableSequence, Sequence
 import itertools
 
 import rs_item
@@ -36,7 +36,7 @@ class RSLazySkillMethod(RSSkillMethod, RSLazyMethod):
 
 
 class RSFarmingMethod(RSSkillMethod):
-    def __init__(self, name=None, input_seq: MutableSequence[Tuple[rs_item.RSItem, float]]=None,
+    def __init__(self, name=None, input_seq: Iterable[Tuple[rs_item.RSItem, float]]=None,
                  output_seq: Iterable[Tuple[rs_item.RSItem, float]]=None, num_per_hour: float=None,
                  plant_experience: float=0, check_experience: float=0, harvest_experience: float=0,
                  harvest_per_tree: float=6, success_rate: float=7./8., cut_payment: float=200., *args, **kwargs):

@@ -9,8 +9,8 @@ from bank_standing_main import compare_bank_standing
 
 
 def main():
-    #compare_all_tree_farming()
-    #compare_all_smelting()
+    compare_all_tree_farming()
+    compare_all_smelting()
     compare_bank_standing()
 
 
